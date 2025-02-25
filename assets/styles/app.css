@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+.background-image {
+    background-image: url('../inbound1.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Couvre toute la zone */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+}
