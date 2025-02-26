@@ -13,18 +13,50 @@
         {% endblock %}
     </head>
     <body>
-        <nav class="bg-blue-600 p-4">
+        <nav class="bg-gray-200 p-4">
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo ou nom du site -->
-                <a href="#" class="text-white text-2xl font-bold">Volako</a>
+                <a href="#" class=" text-2xl font-bold">Volako</a>
 
                 <!-- Liens de navigation -->
                 <ul class="flex space-x-4">
-                    <li><a href="#" class="text-white hover:text-gray-200">Services</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
+                    <li><a href="#" class="">Profile</a></li>
                 </ul>
             </div>
         </nav>
+
+
+      <div class="flex w-full min-h-screen">
+    <!-- Barre latérale -->
+    <div class="w-64 bg-gray-800 text-white p-4">
+        <h2 class="text-xl font-bold mb-4">Sidebar</h2>
+        <ul>
+            <li class="mb-2">
+                <details>
+                    <summary class="cursor-pointer hover:text-gray-400 list-none">
+                        Transaction
+                        <span class="float-right">▼</span>
+                    </summary>
+                    <!-- Sous-menus de Transaction -->
+                    <ul class="pl-4 mt-2">
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-gray-400">Insert</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-gray-400">Lister</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="flex-1 bg-gray-100 p-4">
+        <h1 class="text-2xl font-bold mb-4">Contenu Principal</h1>
         {% block body %}{% endblock %}
+    </div>
+</div>
+        
     </body>
 </html>
